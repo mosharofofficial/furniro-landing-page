@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --bold: 700;
+  --normal: 500;
+  --light: 500;
+  --montserrat: "Montserrat", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --primary: #b88e2f;
+  --secondary: #fff3e3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--poppins);
+}
+
+/* navbar */
+
+nav {
+  padding-inline: 54px;
+  color: black;
+  min-height: 100px;
+  gap: 1rem;
+}
+
+nav,
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style-type: none;
+  font-weight: var(--normal);
+  padding: 0px;
+}
+
+.links,
+.iconLinks {
+  gap: 2rem;
+}
+
+.logo,
+nav ul li {
+  cursor: pointer;
+}
+
+.logo {
+  font-family: var(--montserrat);
+  font-weight: var(--bold);
+  font-size: 2rem;
+  display: flex ;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.logo img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+
+/* hero */
+
+.hero {
+  color: #333;
+  padding: 4rem;
+  background-image: url("/assets/images/heroBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.CTADiv {
+  background-color: var(--secondary);
+  max-width: 650px;
+  max-height: 450px;
+  padding: 3.5rem;
+  border-radius: 10px;
+}
+
+.bigText {
+  font-size: 3rem;
+  margin-block: 0px;
+  color: var(--primary);
+}
+
+.smallText {
+  margin-block: 0px;
+  font-size: 1rem;
+}
+
+.cta {
+  margin-top: 3rem;
+  padding-inline: 72px;
+  padding-block: 25px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: var(--bold);
+  border: none;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: var(--secondary);
+  color: var(--primary);
+  outline: 0.125rem solid var(--primary);
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 0px;
+  }
+
+  .CTADiv {
+    padding: 1rem;
+    max-height: 100%;
+  }
+
+  .hero {
+    padding: .5rem;
+  }
+  
+}
