@@ -20,6 +20,15 @@ body {
   font-family: var(--poppins);
 }
 
+h1 {
+  font-weight: var(--bold);
+  font-size: 2rem;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
 /* navbar */
 
 nav {
@@ -58,7 +67,7 @@ nav ul li {
   font-family: var(--montserrat);
   font-weight: var(--bold);
   font-size: 2rem;
-  display: flex ;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -66,9 +75,9 @@ nav ul li {
 }
 
 .logo img {
-    height: 70px;
-    width: 70px;
-    object-fit: cover;
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
 }
 
 /* hero */
@@ -122,6 +131,53 @@ nav ul li {
   outline: 0.125rem solid var(--primary);
 }
 
+/* Browse Range */
+
+.browseRange {
+
+    color: #333;
+    
+    
+  h1,
+  p {
+    text-align: center;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 100px;
+    margin-top: 4rem;
+  }
+  .option {
+    img {
+      height: 480px; 
+      max-width: 250px;
+      border-radius: 10px;
+    }
+
+    p {
+      font-weight: var(--bold);
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .dining img, .bed img {
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .living img
+   {
+    object-fit: cover;
+    object-position: right;
+  }
+}
 
 /* mobile */
 @media only screen and (max-width: 768px) {
@@ -137,7 +193,6 @@ nav ul li {
   }
 
   .hero {
-    padding: .5rem;
+    padding: 0.5rem;
   }
-  
 }
