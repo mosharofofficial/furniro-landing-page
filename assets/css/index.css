@@ -92,7 +92,8 @@ nav ul li {
   display: flex;
   justify-content: right;
   align-items: center;
-  min-height: 85vh;
+  /* min-height: 85vh; */
+  height: 700px;
 }
 
 .CTADiv {
@@ -134,13 +135,12 @@ nav ul li {
 /* Browse Range */
 
 .browseRange {
+  color: #333;
 
-    color: #333;
-    
-    
   h1,
   p {
     text-align: center;
+    margin: 0;
   }
 
   .options {
@@ -155,8 +155,8 @@ nav ul li {
   }
   .option {
     img {
-      height: 480px; 
-      max-width: 250px;
+      height: 480px;
+      max-width: 350px;
       border-radius: 10px;
     }
 
@@ -167,16 +167,104 @@ nav ul li {
     }
   }
 
-  .dining img, .bed img {
+  .dining img,
+  .bed img {
     object-fit: cover;
     object-position: left;
   }
 
-  .living img
-   {
+  .living img {
     object-fit: cover;
     object-position: right;
   }
+}
+/* our products */
+
+.ourProducts {
+  color: #3a3a3a;
+  padding-inline: 100px;
+}
+
+.title,
+.description {
+  text-align: center;
+  margin-block: 0px;
+}
+
+.cardWrapper {
+  margin-top: 4rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.productCard {
+  max-width: 280px;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  div {
+    color: #3a3a3a;
+    background-color: #f4f5f7;
+    padding: 1rem 1rem 2rem;
+  }
+  .itemName {
+    font-weight: var(--bold);
+  }
+  .shortDescription {
+    color: #898989;
+  }
+  h2,
+  p {
+    margin-block: 0px;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .specialPrice {
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+
+  .regularPrice {
+    text-decoration: line-through;
+    color: #b0b0b0;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0px 0px;
+}
+
+button.showMore {
+  width: 245px;
+  height: 50px;
+  border: 1px solid var(--primary);
+  background-color: white;
+  color: var(--primary);
+  font-weight: var(--bold);
+}
+button.showMore:hover {
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
 }
 
 /* mobile */
